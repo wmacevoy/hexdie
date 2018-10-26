@@ -8,7 +8,7 @@ Make randomness you can trust.  If you want to build a random key with transpara
 
 ## Pretty Good Randomness
 
-Make these dice out of transparent plastic and fill the numbers in with paint.  I assume you print two hex dice and paint one with black and the other with white numbering.  Just roll the dice and agree that the black one is on the left and the white one is on the right, producing 8 bits of random values you can write down in binary or hex.
+Make these dice out of transparent 100% fill plastic and paint in the numbers.  I assume you print two hex dice and paint one with black and the other with white numbering.  Just roll the dice and agree that the black one is on the left and the white one is on the right, producing 8 bits of random values you can write down in binary or hex.
 
 * Since the die are transparent you can tell if they are weighted.
 * You are getting the same amount of randomness per toss as 8 coins, so it is efficient.
