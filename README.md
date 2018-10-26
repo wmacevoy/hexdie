@@ -19,17 +19,17 @@ Preamble. If you are ecrypting with a one time pad, then you would really like p
 
 No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a blank row after each pair of turns of rolls (keep the die in the same order).
 
-|turn|die 1|die 2|
-|----|-----|-----|
-|   1| 0001| 0011|
-|   2| 1100| 1000|
-|    |     |     |
-|   3| 0111| 1111|
-|   4| 0101| 0111|
-|    |     |     |
-|   5| 0111| 1011|
-|   6| 0010| 1101|
-|    |     |     |
+|turn|die 1|die 2|out|
+|----|-----|-----|---|
+|   1| <code>0001</code>| <code>0011</code>|   |
+|   2| <code>1100</code>| <code>1000</code>|   |
+|    |     |     |   |
+|   3| <code>0111</code>| <code>1111</code>|   |
+|   4| <code>0101</code>| <code>0111</code>|   |
+|    |     |     |   |
+|   5| <code>0111</code>| <code>1011</code>|   |
+|   6| <code>0010</code>| <code>1101</code>|   |
+|    |     |     |   |
 
 
 
