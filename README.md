@@ -48,9 +48,9 @@ Now look between columns in the row pairs.  If a column transitions from 0 to 1,
 |   6| <code>0010</code>| <code>1101</code>|   |
 |    | <code>-1-1</code>| <code>-01-</code>|<code>1101</code>|
 
-Notice there are an erratic number of bits, so this process is continued until the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if the dice are not fair, the generated sequence of bits should be purely random provided that the same possibly unfair dice are used in independent trials (turn 1 is independent of row 2, etc.).
+Notice there are an erratic number of bits, so this process is continued until the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if the dice are not fair, the generated sequence of bits should be purely random provided that the same possibly unfair dice are used in independent trials (turn 1 is independent of turn 2, etc.).
 
-## Text
+## Random Text
 
 If you want to make a random passwordish thing, group the bits into six bits (so three hex dice can make two letters) and look them up in the table:
 
