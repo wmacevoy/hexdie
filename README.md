@@ -20,7 +20,7 @@ Preamble. If you are ecrypting with a one time pad, then you would really like p
 No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a blank row after each pair of turns of rolls (keep the die in the same order).
 
 |turn|die 1|die 2|out|
-|----|-----|-----|---|
+|---:|-----|-----|---|
 |   1| <code>0001</code>| <code>0011</code>|   |
 |   2| <code>1100</code>| <code>1000</code>|   |
 |    |     |     |   |
@@ -37,18 +37,18 @@ No die is perfect.  And someone could cheat by intentionally adding different de
 Now look between columns in the row pairs.  If a column transitions from 0 to 1, write  a 0, if it transitions from 1 to 0, write a 1:
 
 |turn|die 1|die 2|out|
-|----|-----|-----|---|
-|   1| 0001| 0011|   |
-|   2| 1100| 1000|   |
-|    | 00-1| 0-11|001011|
-|   3| 0111| 1111|   |
-|   4| 0101| 0111|   |
-|    | --1-| 1---|11|
-|   5| 0111| 1011|   |
-|   6| 0010| 1101|   |
-|    | -1-1| -01-|1101|
+|---:|-----|-----|---|
+|   1| <code>0001</code>| <code>0011</code>|   |
+|   2| <code>1100</code>| <code>1000</code>|   |
+|    | <code>00-1</code>| <code>0-11</code>|<code>001011</code>|
+|   3| <code>0111</code>| <code>1111</code>|   |
+|   4| <code>0101</code>| <code>0111</code>|   |
+|    | <code>--1-</code>| <code>1---</code>|<code>11</code>|
+|   5| <code>0111</code>| <code>1011</code>|   |
+|   6| <code>0010</code>| <code>1101</code>|   |
+|    | <code>-1-1</code>| <code>-01-</code>|<code>1101</code>|
 
-Notice there are an erratic number of bits, this process is continued the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if they are not, the generated sequence of bits should be purely random provided that the same infair dice are used in independent trials (row 1 is independent of row 2, etc.).
+Notice there are an erratic number of bits, so this process is continued until the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if the dice are not fair, the generated sequence of bits should be purely random provided that the same possibly unfair dice are used in independent trials (turn 1 is independent of row 2, etc.).
 
 ## Text
 
