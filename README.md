@@ -33,7 +33,7 @@ No die is perfect.  And someone could cheat by intentionally adding different de
 
 It does not matter how many dice you roll in each toss, or how many bits they produce, but do not switch them in columns (so you must be able to tell them apart).
 
-Now look between columns in the row pairs.  If a column transitions from 0 to 1, write  a 0, if it transitions from 1 to 0, write a 1:
+Now look between values in the same column for rows in the row pairs.  If a column transitions from 0 to 1, output a 0, if it transitions from 1 to 0, output 1:
 
 |toss|die 1|die 2|out|
 |---:|-----|-----|---|
