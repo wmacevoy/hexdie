@@ -61,10 +61,14 @@ player bits
 
 ## Text
 
-|    |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
-|----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|    | <sup><sup>0000</sup></sup>| <sup><sup>0001</sup></sup> | <sup><sup>0010</sup></sup> | <sup><sup>0011</sup></sup> | <sup><sup>0100</sup></sup> | <sup><sup>0101</sup></sup>| <sup><sup>0110</sup></sup>| <sup><sup>0111</sup></sup>| <sup><sup>1000</sup></sup>| <sup><sup>1001</sup></sup>| <sup><sup>1010</sup></sup>| <sup><sup>1011</sup></sup>| <sup><sup>1100</sup></sup>| <sup><sup>1101</sup></sup>| <sup><sup>1110</sup></sup>| <sup><sup>1111</sup></sup>|
-|0 <sup>00</sup>|  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |  N  |  O  |  P  |
-|1 <sup>01</sup>|  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  a  |  b  |  c  |  d  |  e  |  f  |
-|2 <sup>10</sup>|  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |
-|3 <sup>11</sup>|  w  |  x  |  y  |  z  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  +  |  /  |
+If you want to make a random passwordish thing, group the bits into six bits (so three hex dice can make two letters) and look them up in the table:
+
+|     |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|     |<sup><sup>0000</sup></sup>|<sup><sup>0001</sup></sup>|<sup><sup>0010</sup></sup>|<sup><sup>0011</sup></sup>|<sup><sup>0100</sup></sup>|<sup><sup>0101</sup></sup>|<sup><sup>0110</sup></sup>|<sup><sup>0111</sup></sup>|<sup><sup>1000</sup></sup>|<sup><sup>1001</sup></sup>|<sup><sup>1010</sup></sup>|<sup><sup>1011</sup></sup>|<sup><sup>1100</sup></sup>|<sup><sup>1101</sup></sup>|<sup><sup>1110</sup></sup>|<sup><sup>1111</sup></sup>|
+|0<sup>00</sup>|  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |  N  |  O  |  P  |
+|1<sup>01</sup>|  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  a  |  b  |  c  |  d  |  e  |  f  |
+|2<sup>10</sup>|  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |
+|3<sup>11</sup>|  w  |  x  |  y  |  z  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  +  |  /  |
+
+If you want to use two oct-dice instead, you could use the following table
