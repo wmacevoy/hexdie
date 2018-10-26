@@ -13,51 +13,42 @@ Make these dice out of transparent plastic and fill the numbers in with paint.  
 * Since the die are transparent you can tell if they are weighted.
 * You are getting the same amount of randomness per toss as 8 coins, so it is efficient.
 
-## Really good randomness.
+## Really good randomness - von Neumann whitening
 
-No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann Whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a space between each other set of rolls:
+Preamble. If you are ecrypting with a one time pad, then you would really like perfect randomness.  Doing this costs generating about 4 times the number of bits needed, but results in nearly perfect randomness.  If all you are doing a more typical thing like generating a key, the randomness is very likely better than 97% entropy per bit, so just adding 1 more symbol for every 32 gives the same strength without the 4x penalty.
 
-```
-roll back_white
-   1 0001_0011 
-   2 1100_1000
+No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a blank row after each pair of turns of rolls (keep the die in the same order).
 
-   3 0111_1111
-   4 0101_0111
+|turn|die 1|die 2|
+|----|-----|-----|
+|   1| 0001| 0011|
+|   2| 1100| 1000|
+|    |     |     |
+|   3| 0111| 1111|
+|   4| 0101| 0111|
+|    |     |     |
+|   5| 0111| 1011|
+|   6| 0010| 1101|
+|    |     |     |
 
-   5 0111_1011
-   6 0010_1101
 
-```
+
 
 Now look between columns in the row pairs.  If a column transitions from 0 to 1, write  a 0, if it transitions from 1 to 0, write a 1:
 
-```
-roll back_white
-   1 0001_0011 
-   2 1100_1000
-   ->00 1 0 11 output 1
-   3 0111_1111
-   4 0101_0111
-   ->  1  1    output 2
-   5 0111_1011
-   6 0010_1101
-   -> 1 1  01  output 3
-```
+|turn|die 1|die 2|out|
+|----|-----|-----|---|
+|   1| 0001| 0011|   |
+|   2| 1100| 1000|   |
+|    | 00-1| 0-11|001011|
+|   3| 0111| 1111|   |
+|   4| 0101| 0111|   |
+|    | --1-| 1---|11|
+|   5| 0111| 1011|   |
+|   6| 0010| 1101|   |
+|    | -1-1| -01-|1101|
 
-Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if they are not, the generated sequence of bits should be purely random provided that the same infair dice are used in independent trials (row 1 is independent of row 2, etc.).
-
-## No Trust
-
-If N players join in a coin toss and they don't trust the randomness of other players, XOR (0/1 for even/odd number of 1's) the randomness each player provides to get a stream that is at least as random as the best contributor:
-
-```
-player bits
-     1 00011001
-     2 11001000
-     3 11110011
-    -> 00100010
-```
+Notice there are an erratic number of bits, this process is continued the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if they are not, the generated sequence of bits should be purely random provided that the same infair dice are used in independent trials (row 1 is independent of row 2, etc.).
 
 ## Text
 
