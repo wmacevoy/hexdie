@@ -1,6 +1,6 @@
 # hexdie
 
-Makes a nice hex/oct die (depending on the faces parameter).
+Makes a nice hex/oct die (depending on the faces parameter).  This is a [thing](https://www.thingiverse.com/thing:3175252) although these versions are the most up to date.
 
 ## Why
 
