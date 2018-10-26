@@ -15,7 +15,7 @@ Make these dice out of transparent plastic and fill the numbers in with paint.  
 
 ## Really good randomness - von Neumann whitening
 
-Preamble. If you are ecrypting with a one time pad, then you would really like perfect randomness.  Doing this costs generating about 4 times the number of bits needed, but results in nearly perfect randomness.  For a more typical application of generating a key, the randomness is very likely better than 97% entropy per bit, so just adding 1 more symbol for every 32 gives the same strength without the factor of 4 loss and extra work.
+Preamble. If you are encrypting with a one time pad, then you would really like perfect randomness.  Doing this costs generating about 4 times the number of bits needed, but results in nearly perfect randomness.  For a more typical application of generating a key, the randomness is very likely better than 97% entropy per bit, so just adding 1 more symbol for every 32 gives the same strength without the factor of 4 loss and extra work.
 
 No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a blank row after each pair of turns of rolls (keep the die in the same order).
 
