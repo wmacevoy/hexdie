@@ -49,7 +49,7 @@ Now look between values in the same column for rows in the row pairs.  If a colu
 
 Notice there are an erratic number of bits, so this process is continued until the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if the dice are not fair, the generated sequence of bits should be purely random provided that the same possibly unfair dice are used in independent trials (toss 1 is independent of toss 2, etc.).
 
-## Random Text
+## Random Text Using Base64
 
 If you want to make a random passwordish thing, group the bits into six bits (so three hex dice can make two letters) and look them up in the table:
 
@@ -73,3 +73,4 @@ If you want to use two octal dice instead:
 |5<sub>101</sub>|  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |
 |6<sub>110</sub>|  w  |  x  |  y  |  z  |  0  |  1  |  2  |  3  |
 |7<sub>111</sub>|  4  |  5  |  6  |  7  |  8  |  9  |  +  |  /  |
+
