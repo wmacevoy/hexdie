@@ -17,9 +17,9 @@ Make these dice out of transparent plastic and fill the numbers in with paint.  
 
 Preamble. If you are encrypting with a one time pad, then you would really like perfect randomness.  Doing this costs generating about 4 times the number of bits needed, but results in nearly perfect randomness.  For a more typical application of generating a key, the randomness is very likely better than 97% entropy per bit, so just adding 1 more symbol for every 32 gives the same strength without the factor of 4 loss and extra work.
 
-No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a blank row after each pair of turns of rolls (keep the die in the same order).
+No die is perfect.  And someone could cheat by intentionally adding different densities of plastic.  So there is a process called von Neumann whitening that will produce mathematically perfect randomness provided that you are using repeated indepentent tests (you don't change dice and you rattle them enough to completely erase their previous state).  Do this: roll the dice and write down the bits in rows, leave a blank row after each toss pair:
 
-|turn|die 1|die 2|out|
+|toss|die 1|die 2|out|
 |---:|-----|-----|---|
 |   1| <code>0001</code>| <code>0011</code>|   |
 |   2| <code>1100</code>| <code>1000</code>|   |
@@ -31,12 +31,11 @@ No die is perfect.  And someone could cheat by intentionally adding different de
 |   6| <code>0010</code>| <code>1101</code>|   |
 |    |     |     |<code>?</code>   |
 
-
-
+It does not matter how many dice you roll in each toss, or how many bits they produce, but do not switch them in columns (so you must be able to tell them apart).
 
 Now look between columns in the row pairs.  If a column transitions from 0 to 1, write  a 0, if it transitions from 1 to 0, write a 1:
 
-|turn|die 1|die 2|out|
+|toss|die 1|die 2|out|
 |---:|-----|-----|---|
 |   1| <code>0001</code>| <code>0011</code>|   |
 |   2| <code>1100</code>| <code>1000</code>|   |
@@ -48,7 +47,7 @@ Now look between columns in the row pairs.  If a column transitions from 0 to 1,
 |   6| <code>0010</code>| <code>1101</code>|   |
 |    | <code>-1-1</code>| <code>-01-</code>|<code>1101</code>|
 
-Notice there are an erratic number of bits, so this process is continued until the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if the dice are not fair, the generated sequence of bits should be purely random provided that the same possibly unfair dice are used in independent trials (turn 1 is independent of turn 2, etc.).
+Notice there are an erratic number of bits, so this process is continued until the desired number of random bits are generated.  Assuming the dice are fair, on average this should generate 1/4 of the bits that you started with.  Even if the dice are not fair, the generated sequence of bits should be purely random provided that the same possibly unfair dice are used in independent trials (toss 1 is independent of toss 2, etc.).
 
 ## Random Text
 
