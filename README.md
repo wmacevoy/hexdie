@@ -61,66 +61,15 @@ player bits
 
 ## Text
 
-{|class="wikitable" style="text-align:center"
-|-
-!scope="col"| Index !!scope="col"| Char
-|rowspan="17"|
-!scope="col"| Index !!scope="col"| Char
-|rowspan="17"|
-!scope="col"| Index !!scope="col"| Char
-|rowspan="17"|
-!scope="col"| Index !!scope="col"| Char
-|-
-|        || 0 00           ||    || 1 01           ||    || 2 10           ||    || 3 11
-| 0 0000 || <code>A</code> || 16 || <code>Q</code> || 32 || <code>g</code> || 48 || <code>w</code>
-|-
-| 1 0001 || <code>B</code> || 17 || <code>R</code> || 33 || <code>h</code> || 49 || <code>x</code>
-|-
-| 2 0010 || <code>C</code> || 18 || <code>S</code> || 34 || <code>i</code> || 50 || <code>y</code>
-|-
-| 3 0011 || <code>D</code> || 19 || <code>T</code> || 35 || <code>j</code> || 51 || <code>z</code>
-|-
-| 4 0100 || <code>E</code> || 20 || <code>U</code> || 36 || <code>k</code> || 52 || <code>0</code>
-|-
-| 5 0101 || <code>F</code> || 21 || <code>V</code> || 37 || <code>l</code> || 53 || <code>1</code>
-|-
-| 6 0110 || <code>G</code> || 22 || <code>W</code> || 38 || <code>m</code> || 54 || <code>2</code>
-|-
-| 7 0111 || <code>H</code> || 23 || <code>X</code> || 39 || <code>n</code> || 55 || <code>3</code>
-|-
-| 8 1000 || <code>I</code> || 24 || <code>Y</code> || 40 || <code>o</code> || 56 || <code>4</code>
-|-
-| 9 1001 || <code>J</code> || 25 || <code>Z</code> || 41 || <code>p</code> || 57 || <code>5</code>
-|-
-| A 1010 || <code>K</code> || 26 || <code>a</code> || 42 || <code>q</code> || 58 || <code>6</code>
-|-
-| B 1011 || <code>L</code> || 27 || <code>b</code> || 43 || <code>r</code> || 59 || <code>7</code>
-|-
-| C 1100 || <code>M</code> || 28 || <code>c</code> || 44 || <code>s</code> || 60 || <code>8</code>
-|-
-| D 1101 || <code>N</code> || 29 || <code>d</code> || 45 || <code>t</code> || 61 || <code>9</code>
-|-
-| E 1110 || <code>O</code> || 30 || <code>e</code> || 46 || <code>u</code> || 62 || <code>+</code>
-|-
-| F 1111 || <code>P</code> || 31 || <code>f</code> || 47 || <code>v</code> || 63 || <code>/</code>
-|}
-
-code>3</code>
-|-
-|  8 || <code>I</code> || 24 || <code>Y</code> || 40 || <code>o</code> || 56 || <code>4</code>
-|-
-|  9 || <code>J</code> || 25 || <code>Z</code> || 41 || <code>p</code> || 57 || <code>5</code>
-|-
-| 10 || <code>K</code> || 26 || <code>a</code> || 42 || <code>q</code> || 58 || <code>6</code>
-|-
-| 11 || <code>L</code> || 27 || <code>b</code> || 43 || <code>r</code> || 59 || <code>7</code>
-|-
-| 12 || <code>M</code> || 28 || <code>c</code> || 44 || <code>s</code> || 60 || <code>8</code>
-|-
-| 13 || <code>N</code> || 29 || <code>d</code> || 45 || <code>t</code> || 61 || <code>9</code>
-|-
-| 14 || <code>O</code> || 30 || <code>e</code> || 46 || <code>u</code> || 62 || <code>+</code>
-|-
-| 15 || <code>P</code> || 31 || <code>f</code> || 47 || <code>v</code> || 63 || <code>/</code>
-|}
-~
+|     |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|     | 0000| 0001| 0010| 0011| 0100| 0101| 0110| 0111| 1000| 1001| 1010| 1011| 1100| 1101| 1110| 1111|
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|0 00|  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |  N  |  O  |  P  |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|1 01|  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  a  |  b  |  c  |  d  |  e  |  f  |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|2 10|  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+|3 11|  w  |  x  |  y  |  z  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  +  |  /  |
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
