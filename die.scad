@@ -64,9 +64,16 @@ module die(faces,r) {
     polyhedron(points=pointList(faces,r), faces=faceList(faces));
 }
 
+module roundedDie(faces,r) {
+    intersection() {
+      die(faces,r);
+      sphere(r*0.95,$fn=360);
+    }
+}
+
 module labeledDie(faces,r,font) {
   difference() {
-    die(faces,r);
+    roundedDie(faces,r);
     union() {
         bitCodes(faces,r,font);
         hexCodes(faces,r,font);
