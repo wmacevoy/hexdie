@@ -63,8 +63,8 @@ player bits
 
 |    |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
 |----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|    | <sup>0000</sup>| <sup>0001</sup>| <sup>0010</sup>| <sup>0011</sup> | <sup>0100</sup> | 0101| 0110| 0111| 1000| 1001| 1010| 1011| 1100| 1101| 1110| 1111|
-|0 00|  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |  N  |  O  |  P  |
-|1 01|  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  a  |  b  |  c  |  d  |  e  |  f  |
-|2 10|  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |
-|3 11|  w  |  x  |  y  |  z  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  +  |  /  |
+|    | <sup><sup>0000</sup></sup>| <sup><sup>0001</sup></sup> | <sup><sup>0010</sup></sup> | <sup><sup>0011</sup></sup> | <sup><sup>0100</sup></sup> | <sup><sup>0101</sup></sup>| <sup><sup>0110</sup></sup>| <sup><sup>0111</sup></sup>| <sup><sup>1000</sup></sup>| <sup><sup>1001</sup></sup>| <sup><sup>1010</sup></sup>| <sup><sup>1011</sup></sup>| <sup><sup>1100</sup></sup>| <sup><sup>1101</sup></sup>| <sup><sup>1110</sup></sup>| <sup><sup>1111</sup></sup>|
+|0 <sup>00</sup>|  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |  N  |  O  |  P  |
+|1 <sup>01</sup>|  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  a  |  b  |  c  |  d  |  e  |  f  |
+|2 <sup>10</sup>|  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |
+|3 <sup>11</sup>|  w  |  x  |  y  |  z  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  +  |  /  |
