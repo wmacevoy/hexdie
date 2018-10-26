@@ -23,13 +23,13 @@ No die is perfect.  And someone could cheat by intentionally adding different de
 |---:|-----|-----|---|
 |   1| <code>0001</code>| <code>0011</code>|   |
 |   2| <code>1100</code>| <code>1000</code>|   |
-|    |     |     |   |
+|    |     |     |<code>?</code>   |
 |   3| <code>0111</code>| <code>1111</code>|   |
 |   4| <code>0101</code>| <code>0111</code>|   |
-|    |     |     |   |
+|    |     |     |<code>?</code>   |
 |   5| <code>0111</code>| <code>1011</code>|   |
 |   6| <code>0010</code>| <code>1101</code>|   |
-|    |     |     |   |
+|    |     |     |<code>?</code>   |
 
 
 
