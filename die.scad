@@ -1,6 +1,8 @@
 hexCodes = "0123456789ABCDEF";
 
 use <K2D-Regular.ttf> // https://fonts.google.com/?category=Sans+Serif,Monospace&subset=latin&selection.family=K2D
+use <Roboto-Bold.ttf>
+use <VeraMono.ttf>
 
 function spherical(r,theta,phi)=[r*cos(phi)*sin(theta),r*sin(phi)*sin(theta),r*cos(theta)];
 
@@ -33,9 +35,10 @@ function bitStr(faces,k)=str(faces > 8 ? bit(k,3) : "",bit(k,2),bit(k,1),bit(k,0
 function hexStr(faces,k)=hexCodes[k];
 
 module bitCode(faces,k,r0,font0) {
+    depth = 0.75;
     multmatrix(faceMatrix(faces,k,r0)) {
-        translate([0,r0/4,-r0/40]) linear_extrude(height = r0/20) {
-            text(bitStr(faces,faceValue(faces,k)), size = r0/(faces/2.5), font = font0, halign = "center", valign = "center", $fn=24);
+        translate([0,0.15*r0,-depth]) linear_extrude(height = 2*depth) {
+            text(bitStr(faces,faceValue(faces,k)), size = 2.8*r0/faces, font = font0, halign = "center", valign = "center", $fn=24);
         }
     }
 }
@@ -47,9 +50,10 @@ module bitCodes(faces,r,font) {
 }
 
 module hexCode(faces,k,r0,font0) {
+    depth = 0.75;
     multmatrix(faceMatrix(faces,k,r0)) {
-        translate([0,2*r0/3,-r0/40]) linear_extrude(height = r0/20) {
-            text(hexStr(faces,faceValue(faces,k)), size = r0/(faces/3.5), font = font0, halign = "center", valign = "center", $fn=36);
+        translate([0,0.55*r0,-depth]) linear_extrude(height = 2*depth) {
+            text(hexStr(faces,faceValue(faces,k)), size = 6.5*r0/faces, font = font0, halign = "center", valign = "center", $fn=36);
         }
     }
 }
@@ -81,9 +85,9 @@ module labeledDie(faces,r,font) {
   }
 }
 
-font = "K2D-Regular";
-faces = 8;
-radius = 10;
+font = "VeraMono";
+faces = 16;
+radius = (25.4/2)/0.95; // 1-in diameter
 
 labeledDie(faces,radius,font);
 
